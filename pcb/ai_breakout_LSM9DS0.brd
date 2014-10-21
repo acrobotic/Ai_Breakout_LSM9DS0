@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -153,10 +153,14 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="15.24" y2="0" width="0.0254" layer="20"/>
-<wire x1="15.24" y1="0" x2="15.24" y2="19.05" width="0.0254" layer="20"/>
-<wire x1="15.24" y1="19.05" x2="0" y2="19.05" width="0.0254" layer="20"/>
-<wire x1="0" y1="19.05" x2="0" y2="0" width="0.0254" layer="20"/>
+<wire x1="0" y1="18.415" x2="0" y2="0.635" width="0.0254" layer="20"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="0" width="0.0254" layer="20" curve="90"/>
+<wire x1="0.635" y1="0" x2="14.605" y2="0" width="0.0254" layer="20"/>
+<wire x1="14.605" y1="0" x2="15.24" y2="0.635" width="0.0254" layer="20" curve="90"/>
+<wire x1="15.24" y1="0.635" x2="15.24" y2="18.415" width="0.0254" layer="20"/>
+<wire x1="15.24" y1="18.415" x2="14.605" y2="19.05" width="0.0254" layer="20" curve="90"/>
+<wire x1="14.605" y1="19.05" x2="0.635" y2="19.05" width="0.0254" layer="20"/>
+<wire x1="0.635" y1="19.05" x2="0" y2="18.415" width="0.0254" layer="20" curve="90"/>
 <text x="0.3175" y="2.8575" size="0.8128" layer="21" ratio="10">3V3</text>
 <text x="2.8575" y="2.8575" size="0.8128" layer="21" ratio="10">GND</text>
 <text x="5.3975" y="2.8575" size="0.8128" layer="21" ratio="10">SDA</text>
@@ -177,9 +181,9 @@
 <text x="9.68375" y="15.20825" size="0.4572" layer="21" ratio="10">XM</text>
 <text x="12.66825" y="15.27175" size="0.4572" layer="21" ratio="10">G</text>
 <text x="14.605" y="15.27175" size="0.4572" layer="21" ratio="10">G</text>
-<text x="12.16025" y="12.0015" size="0.6096" layer="22" ratio="10" rot="MR0">LSM9DS0 BREAKOUT</text>
-<text x="10.38225" y="9.4615" size="0.508" layer="22" ratio="10" rot="MR0">Pasadena, CA</text>
-<text x="0.1905" y="7.0485" size="0.508" layer="21" ratio="10" rot="SR270">v1.0</text>
+<text x="11.90625" y="11.6205" size="0.6096" layer="22" ratio="10" rot="MR0">LSM9DS0 BREAKOUT</text>
+<text x="10.12825" y="9.4615" size="0.508" layer="22" ratio="10" rot="MR0">Pasadena, CA</text>
+<text x="0.8255" y="4.2545" size="0.508" layer="21" ratio="10" rot="SR90">v1.0</text>
 </plain>
 <libraries>
 <library name="Ai_Passives">
@@ -4572,11 +4576,12 @@ design rules under a new name.</description>
 <approved hash="19,1,04118536e9cf2094"/>
 <approved hash="19,1,44b73c74a0c69079"/>
 <approved hash="19,1,068e7f6be23704c5"/>
+<approved hash="4,1,fc9db68a228938ce"/>
 <approved hash="5,1,d0dc7ae11fbde5f7"/>
 <approved hash="19,1,1cad44c47bd67fc5"/>
 <approved hash="19,1,0d5d2ed50c1e73ec"/>
-<approved hash="19,1,9330a4e7939a2c3b"/>
 <approved hash="19,1,32fd5b1f08292cdb"/>
+<approved hash="19,1,9330a4e7939a2c3b"/>
 <approved hash="19,1,2342f74979139c77"/>
 <approved hash="5,1,28dc7ae8dbb3f9e0"/>
 <approved hash="19,1,915712c9bc1e4bfa"/>
@@ -4584,13 +4589,13 @@ design rules under a new name.</description>
 <approved hash="19,1,41533c2c13396b5e"/>
 <approved hash="19,1,8ae36d41749dcf76"/>
 <approved hash="19,1,6afd831fb0356cd8"/>
-<approved hash="5,1,efbe29b62786078b"/>
 <approved hash="5,1,070827362935ef0e"/>
-<approved hash="5,1,eb3dad35a305830b"/>
+<approved hash="5,1,efbe29b62786078b"/>
 <approved hash="5,1,838ba3b5adb5eb8d"/>
+<approved hash="5,1,eb3dad35a305830b"/>
 <approved hash="5,1,2cdc7ad588890ef7"/>
-<approved hash="19,1,de6127d292199bd3"/>
 <approved hash="19,1,159297c393d1e1f9"/>
+<approved hash="19,1,de6127d292199bd3"/>
 <approved hash="19,1,d4fee51cf028cadb"/>
 <approved hash="19,1,160ce3dc58a26904"/>
 <approved hash="19,1,7b49b05af681077c"/>
@@ -4598,6 +4603,7 @@ design rules under a new name.</description>
 <approved hash="19,1,0edd3517ad189828"/>
 <approved hash="19,1,072947029054de85"/>
 <approved hash="19,1,0b7d701fe42d135f"/>
+<approved hash="4,16,fc9db68a228938ce"/>
 </errors>
 </board>
 </drawing>
